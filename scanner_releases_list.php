@@ -15,7 +15,7 @@
 
       <h3 style = "color: #01B0F1;">Scanner -> System Releases List</h3>
 
-        <h3><img src="images/releases.png" style="max-height: 35px;" />System Releases</h3>
+        <h3><img src="images/releases.png" style="max-height: 35px;" /> System Releases</h3>
 
         <table id="info" cellpadding="0" cellspacing="0" border="0"
             class="datatable table table-striped table-bordered datatable-style table-hover"
@@ -56,8 +56,8 @@
 
               <?php
 
-$sql = "SELECT * from releases ORDER BY rtm_date ASC;";
-$result = $db->query($sql);
+                $sql = "SELECT * from releases ORDER BY rtm_date ASC;";
+                $result = $db->query($sql);
 
                 if ($result->num_rows > 0) {
                     // output data of each row
