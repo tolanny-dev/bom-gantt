@@ -27,7 +27,7 @@
         $cout = 0;
 
         $i = $result->num_rows;
-        echo $i;
+        // echo $i;
 
         
 
