@@ -54,7 +54,7 @@
 
               <?php
 
-              $sql = "SELECT * from sbom ORDER BY row_id ASC;";
+               $sql = "SELECT * from sbom ORDER BY row_id ASC;";
               $result = $db->query($sql);
 
                 if ($result->num_rows > 0) {
@@ -80,6 +80,33 @@
                 }//end else
 
                  $result->close();
+
+              // $sql = "SELECT * from sbom ORDER BY row_id ASC;";
+              // $result = $db->query($sql);
+
+              //   if ($result->num_rows > 0) {
+              //       // output data of each row
+              //       while($row = $result->fetch_assoc()) {
+              //           echo '<tr>
+              //                   <td>'.$row["row_id"].'</td>
+              //                   <td>'.$row["app_id"].' </span> </td>
+              //                   <td>'.$row["app_name"].'</td>
+              //                   <td>'.$row["app_version"].'</td>
+              //                   <td>'.$row["cmp_id"].' </span> </td>
+              //                   <td>'.$row["cmp_name"].'</td>
+              //                   <td>'.$row["cmp_version"].'</td>
+              //                   <td>'.$row["cmp_type"].' </span> </td>
+              //                   <td>'.$row["app_status"].' </span> </td>
+              //                   <td>'.$row["cmp_status"].' </span> </td>
+              //                   <td>'.$row["notes"].' </span> </td>
+              //               </tr>';
+              //       }//end while
+              //   }//end if
+              //   else {
+              //       echo "0 results";
+              //   }//end else
+
+              //    $result->close();
 
                  
                 ?>
